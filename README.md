@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Description of the project
 This project is a simple web application on Flask that interacts with Elasticsearch to create,
 read, update, delete, and search for posts.
@@ -17,6 +18,12 @@ Search for posts by title and content with pagination support.
 GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
 
 Getting a post by ID.
+=======
+GET http://localhost:9200/posts/_search
+
+GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
+
+>>>>>>> origin/main
 GET http://localhost:9200/posts/_doc/11
     {
         "title": "My eleventh Post",
@@ -38,7 +45,10 @@ GET http://localhost:9200/posts/_doc/11
             "_primary_term": 36
         }
 
+<<<<<<< HEAD
 Creating a new post.
+=======
+>>>>>>> origin/main
 POST http://localhost:9200/posts/_doc/3
     {
         "title": "My third Post",
@@ -60,7 +70,10 @@ POST http://localhost:9200/posts/_doc/3
         "_primary_term": 36
     }
 
+<<<<<<< HEAD
 Updating an existing post by ID.
+=======
+>>>>>>> origin/main
 PUT http://localhost:9200/posts/_doc/2
     {
         "title": "My Second Post3",
@@ -82,7 +95,10 @@ PUT http://localhost:9200/posts/_doc/2
             "_primary_term": 36
         }
 
+<<<<<<< HEAD
 Deleting a post by ID.
+=======
+>>>>>>> origin/main
 DELETE http://localhost:9200/posts/_doc/3
     {
         "_index": "posts",
@@ -98,6 +114,7 @@ DELETE http://localhost:9200/posts/_doc/3
         "_seq_no": 113,
         "_primary_term": 36
     }
+<<<<<<< HEAD
 
 Elasticsearch is pinged to check availability before launching the application.
 All interactions with Elasticsearch are performed using its Python client.
@@ -159,3 +176,5 @@ Routing and API:
         Search for posts using full-text search in the title and content fields.
     Elasticsearch is used as a data warehouse.
 Exception handling: If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.
+=======
+>>>>>>> origin/main
