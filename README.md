@@ -1,4 +1,4 @@
-Description of the project
+Description of the project.
 This project is a simple web application on Flask that interacts with Elasticsearch to create,
 read, update, delete, and search for posts.
 The project uses containerization with Docker, which makes it easy to deploy an application with the necessary dependencies.
