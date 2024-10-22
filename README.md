@@ -6,11 +6,11 @@ The project uses containerization with Docker, which makes it easy to deploy an 
 The main project files are:
 app.py:
 
-The main application file on Flask.
-The main goal is to provide an API for managing posts using Elasticsearch.
-Main functions:
+The main application file on Flask. 
+The main goal is to provide an API for managing posts using Elasticsearch. 
+Main functions: 
 
-Getting posts.\n
+Getting posts.
 GET http://localhost:9200/posts/_search
 
 Search for posts by title and content with pagination support.
