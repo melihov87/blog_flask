@@ -10,7 +10,7 @@ The main application file on Flask.
 The main goal is to provide an API for managing posts using Elasticsearch.
 Main functions:
 
-Getting posts.
+Getting posts.\n
 GET http://localhost:9200/posts/_search
 
 Search for posts by title and content with pagination support.
