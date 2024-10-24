@@ -134,10 +134,10 @@ Automatically binds containers so that the Flask application can interact with E
 A script that describes the steps to create a Docker image of a Flask application. <br>
 <p></p>Basic steps: <br>
     <ul>
-&nbsp;&nbsp;&nbsp;&nbsp;<li>Uses a basic Python image. <br></li>
-&nbsp;&nbsp;&nbsp;&nbsp;<li>Sets the necessary dependencies from requirements.txt . <br></li>
-&nbsp;&nbsp;&nbsp;&nbsp;<li>Copies the source code of the application to the container. <br></li>
-&nbsp;&nbsp;&nbsp;&nbsp;<li>Launches the Flask application. <br></li>
+        <li>Uses a basic Python image. <br></li>
+        <li>Sets the necessary dependencies from requirements.txt . <br></li>
+        <li>Copies the source code of the application to the container. <br></li>
+        <li>Launches the Flask application. <br></li>
     </ul>
 Example of sections: <br>
     <ul>
@@ -163,8 +163,12 @@ Example: running flake8, pylint, or tests with pytest to make sure that the code
 <p>Code description: <br>
 Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function. <br>
 Routing and API: <br>
-&nbsp;&nbsp;The code implements basic CRUD operations for posts: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Receiving, creating, updating, deleting posts. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Search for posts using full-text search in the title and content fields. <br>
-&nbsp;&nbsp;Elasticsearch is used as a data warehouse. <br>
+    <ul>
+        <li>The code implements basic CRUD operations for posts: <br></li>
+            <ul>
+                <li>Receiving, creating, updating, deleting posts. <br></li>
+                <li>Search for posts using full-text search in the title and content fields. <br></li>
+            </ul>
+        <li>Elasticsearch is used as a data warehouse. <br></li>
+    </li>
 Exception handling: If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.</p> <br>
