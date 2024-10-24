@@ -141,10 +141,10 @@ A script that describes the steps to create a Docker image of a Flask applicatio
     </ul>
 Example of sections: <br>
     <ul>
-&nbsp;&nbsp;&nbsp;&nbsp;<li>FROM python:3.9: Basic image. <br></li>
-&nbsp;&nbsp;&nbsp;&nbsp;<li>COPY . /app: Copy project files. <br></li>
-&nbsp;&nbsp;&nbsp;&nbsp;<li>RUN pip install -r requirements.txt : Installing dependencies. <br></li>
-&nbsp;&nbsp;&nbsp;&nbsp;<li>CMD ["python", "app.py "]: Launching the application. <br></p></li>
+        <li>FROM python:3.9: Basic image. <br></li>
+        <li>COPY . /app: Copy project files. <br></li>
+        <li>RUN pip install -r requirements.txt : Installing dependencies. <br></li>
+        <li>CMD ["python", "app.py "]: Launching the application. <br></p></li>
     </ul>
 </p>
 
