@@ -133,15 +133,16 @@ Automatically binds containers so that the Flask application can interact with E
 <p>Dockerfile: <br>
 A script that describes the steps to create a Docker image of a Flask application. <br>
 Basic steps: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Uses a basic Python image. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Sets the necessary dependencies from requirements.txt . <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Copies the source code of the application to the container. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;Launches the Flask application. <br>
+    <ul>
+&nbsp;&nbsp;&nbsp;&nbsp;<li>Uses a basic Python image. <br></li>
+&nbsp;&nbsp;&nbsp;&nbsp;<li>Sets the necessary dependencies from requirements.txt . <br></li>
+&nbsp;&nbsp;&nbsp;&nbsp;<li>Copies the source code of the application to the container. <br></li>
+&nbsp;&nbsp;&nbsp;&nbsp;<li>Launches the Flask application. <br></li>
 Example of sections: <br>
-&nbsp;&nbsp;&nbsp;&nbsp;FROM python:3.9: Basic image. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;COPY . /app: Copy project files. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;RUN pip install -r requirements.txt : Installing dependencies. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;CMD ["python", "app.py "]: Launching the application. <br></p>
+&nbsp;&nbsp;&nbsp;&nbsp;<li>FROM python:3.9: Basic image. <br></li>
+&nbsp;&nbsp;&nbsp;&nbsp;<li>COPY . /app: Copy project files. <br></li>
+&nbsp;&nbsp;&nbsp;&nbsp;<li>RUN pip install -r requirements.txt : Installing dependencies. <br></li>
+&nbsp;&nbsp;&nbsp;&nbsp;<li>CMD ["python", "app.py "]: Launching the application. <br></p></li>
 
 
 <p>mypy.ini: <br>
