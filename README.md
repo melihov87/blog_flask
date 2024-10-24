@@ -130,18 +130,18 @@ Two containers are launched in this project:
 Automatically binds containers so that the Flask application can interact with Elasticsearch.
 
 
-Dockerfile:
-A script that describes the steps to create a Docker image of a Flask application.
-Basic steps:
-    Uses a basic Python image.
-    * Sets the necessary dependencies from requirements.txt .
-    Copies the source code of the application to the container.
-    Launches the Flask application.
-Example of sections:
-    FROM python:3.9: Basic image.
-    COPY . /app: Copy project files.
-    RUN pip install -r requirements.txt : Installing dependencies.
-    CMD ["python", "app.py "]: Launching the application.
+Dockerfile: <br>
+A script that describes the steps to create a Docker image of a Flask application. <br>
+Basic steps: <br>
+    Uses a basic Python image. <br>
+    * Sets the necessary dependencies from requirements.txt . <br>
+    Copies the source code of the application to the container. <br>
+    Launches the Flask application. <br>
+Example of sections: <br>
+    FROM python:3.9: Basic image. <br>
+    COPY . /app: Copy project files. <br>
+    RUN pip install -r requirements.txt : Installing dependencies. <br>
+    CMD ["python", "app.py "]: Launching the application. <br>
 
 
 mypy.ini:
