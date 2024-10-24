@@ -169,6 +169,6 @@ Application initialization: A Flask application is created, a connection to Elas
                 <li>Receiving, creating, updating, deleting posts. <br></li>
                 <li>Search for posts using full-text search in the title and content fields. <br></li>
             </ul>
-        <li>Elasticsearch is used as a data warehouse. <br></li>
-    </li>
-Exception handling: If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.<br></p> 
+        <li>Elasticsearch is used as a data warehouse.</li>
+    </li><br>
+Exception handling: If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.</p> 
