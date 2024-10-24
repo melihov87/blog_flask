@@ -133,15 +133,15 @@ Automatically binds containers so that the Flask application can interact with E
 <p>Dockerfile: <br>
 A script that describes the steps to create a Docker image of a Flask application. <br>
 Basic steps: <br>
-    Uses a basic Python image. <br>
-    Sets the necessary dependencies from requirements.txt . <br>
-    Copies the source code of the application to the container. <br>
-    Launches the Flask application. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Uses a basic Python image. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Sets the necessary dependencies from requirements.txt . <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Copies the source code of the application to the container. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Launches the Flask application. <br>
 Example of sections: <br>
-    FROM python:3.9: Basic image. <br>
-    COPY . /app: Copy project files. <br>
-    RUN pip install -r requirements.txt : Installing dependencies. <br>
-    CMD ["python", "app.py "]: Launching the application. <br></p>
+&nbsp;&nbsp;&nbsp;&nbsp;FROM python:3.9: Basic image. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;COPY . /app: Copy project files. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;RUN pip install -r requirements.txt : Installing dependencies. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;CMD ["python", "app.py "]: Launching the application. <br></p>
 
 
 <p>mypy.ini: <br>
@@ -158,8 +158,8 @@ Example: running flake8, pylint, or tests with pytest to make sure that the code
 <p>Code description: <br>
 Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function. <br>
 Routing and API: <br>
-    The code implements basic CRUD operations for posts: <br>
-        Receiving, creating, updating, deleting posts. <br>
-        Search for posts using full-text search in the title and content fields. <br>
-    Elasticsearch is used as a data warehouse. <br>
+&nbsp;&nbsp;The code implements basic CRUD operations for posts: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Receiving, creating, updating, deleting posts. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;Search for posts using full-text search in the title and content fields. <br>
+&nbsp;&nbsp;Elasticsearch is used as a data warehouse. <br>
 Exception handling: If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.</p> <br>
