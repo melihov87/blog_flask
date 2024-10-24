@@ -138,11 +138,14 @@ Basic steps: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;<li>Sets the necessary dependencies from requirements.txt . <br></li>
 &nbsp;&nbsp;&nbsp;&nbsp;<li>Copies the source code of the application to the container. <br></li>
 &nbsp;&nbsp;&nbsp;&nbsp;<li>Launches the Flask application. <br></li>
+    </ul>
 Example of sections: <br>
+    <ul>
 &nbsp;&nbsp;&nbsp;&nbsp;<li>FROM python:3.9: Basic image. <br></li>
 &nbsp;&nbsp;&nbsp;&nbsp;<li>COPY . /app: Copy project files. <br></li>
 &nbsp;&nbsp;&nbsp;&nbsp;<li>RUN pip install -r requirements.txt : Installing dependencies. <br></li>
 &nbsp;&nbsp;&nbsp;&nbsp;<li>CMD ["python", "app.py "]: Launching the application. <br></p></li>
+    </ul>
 
 
 <p>mypy.ini: <br>
