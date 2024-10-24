@@ -132,7 +132,7 @@ Automatically binds containers so that the Flask application can interact with E
 
 <p>Dockerfile: <br>
 A script that describes the steps to create a Docker image of a Flask application. <br>
-Basic steps: <br>
+<p></p>Basic steps: <br>
     <ul>
 &nbsp;&nbsp;&nbsp;&nbsp;<li>Uses a basic Python image. <br></li>
 &nbsp;&nbsp;&nbsp;&nbsp;<li>Sets the necessary dependencies from requirements.txt . <br></li>
@@ -146,6 +146,7 @@ Example of sections: <br>
 &nbsp;&nbsp;&nbsp;&nbsp;<li>RUN pip install -r requirements.txt : Installing dependencies. <br></li>
 &nbsp;&nbsp;&nbsp;&nbsp;<li>CMD ["python", "app.py "]: Launching the application. <br></p></li>
     </ul>
+</p>
 
 
 <p>mypy.ini: <br>
