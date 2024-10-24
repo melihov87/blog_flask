@@ -162,7 +162,7 @@ Example: running flake8, pylint, or tests with pytest to make sure that the code
 
 <p>Code description: <br>
 Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function. <br>
-Routing and API: <br>
+<p></p>Routing and API: <br>
     <ul>
         <li>The code implements basic CRUD operations for posts: <br></li>
             <ul>
@@ -171,4 +171,4 @@ Routing and API: <br>
             </ul>
         <li>Elasticsearch is used as a data warehouse. <br></li>
     </li>
-Exception handling: If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.</p> <br>
+Exception handling: If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.<br></p> 
