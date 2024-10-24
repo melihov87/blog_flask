@@ -103,34 +103,34 @@ DELETE http://localhost:9200/posts/_doc/3
         "_primary_term": 36
     }
 
-Elasticsearch is pinged to check availability before launching the application.
-All interactions with Elasticsearch are performed using its Python client.
+<p>Elasticsearch is pinged to check availability before launching the application.
+All interactions with Elasticsearch are performed using its Python client.</p>
 
 
-.flake8:
+<p>.flake8:
 The configuration file for the flake8 tool, which checks the code for compliance with PEP8 standards (Python code style).
-Contains rules and exceptions for code validation.
+Contains rules and exceptions for code validation.</p>
 
 
-.gitignore:
+<p>.gitignore:
 A list of files and directories that should not be monitored by the Git version control system.
-For example, temporary files, generated files, Python environments, etc.
+For example, temporary files, generated files, Python environments, etc.</p>
 
 
-.pylintrc:
+<p>.pylintrc:
 The configuration file for the pylint tool, which performs static code analysis.
-It contains settings for checking the style, code quality, and various warnings.
+It contains settings for checking the style, code quality, and various warnings.</p>
 
 
-docker-compose.yml:
+<p>docker-compose.yml:
 A file for Docker Compose that describes how to run multiple containers at the same time.
 Two containers are launched in this project:
     flask_app: A container for a web application on Flask.
     elasticsearch: A container with Elasticsearch for storing and searching data.
-Automatically binds containers so that the Flask application can interact with Elasticsearch.
+Automatically binds containers so that the Flask application can interact with Elasticsearch.</p>
 
 
-Dockerfile: <br>
+<p>Dockerfile: <br>
 A script that describes the steps to create a Docker image of a Flask application. <br>
 Basic steps: <br>
     <p>Uses a basic Python image. <br><p>
@@ -141,25 +141,25 @@ Example of sections: <br>
     FROM python:3.9: Basic image. <br>
     COPY . /app: Copy project files. <br>
     RUN pip install -r requirements.txt : Installing dependencies. <br>
-    CMD ["python", "app.py "]: Launching the application. <br>
+    CMD ["python", "app.py "]: Launching the application. <br></p>
 
 
-mypy.ini:
+<p>mypy.ini:
 The configuration file for the mypy tool that checks type annotations in Python.
-Helps with static type checking, which improves code quality and helps prevent errors.
+Helps with static type checking, which improves code quality and helps prevent errors.</p>
 
 
-pre-commit.sh:
+<p>pre-commit.sh:
 A script for automatically checking the code before committing to Git.
 It usually contains commands to run linters, tests, or other code checks before committing changes.
-Example: running flake8, pylint, or tests with pytest to make sure that the code meets the standards before making changes to the repository.
+Example: running flake8, pylint, or tests with pytest to make sure that the code meets the standards before making changes to the repository.</p>
 
 
-Code description:
+<p>Code description:
 Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function.
 Routing and API:
     The code implements basic CRUD operations for posts:
         Receiving, creating, updating, deleting posts.
         Search for posts using full-text search in the title and content fields.
     Elasticsearch is used as a data warehouse.
-Exception handling: If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.
+Exception handling: If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.</p>
