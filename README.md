@@ -21,7 +21,7 @@ GET <http://localhost:9200/posts/_search>
 
 GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
 
-GET http://localhost:9200/posts/_doc/11
+GET http://localhost:9200/posts/_doc/11 <br>
     {
         "title": "My eleventh Post",
         "content": "Hello, world!"
@@ -43,7 +43,7 @@ GET http://localhost:9200/posts/_doc/11
         }
 
 Creating a new post. <br>
-POST http://localhost:9200/posts/_doc/3
+POST http://localhost:9200/posts/_doc/3 <br>
     {
         "title": "My third Post",
         "content": "Hello, world!"
@@ -65,7 +65,7 @@ POST http://localhost:9200/posts/_doc/3
     }
 
 Updating an existing post by ID. <br>
-PUT http://localhost:9200/posts/_doc/2
+PUT http://localhost:9200/posts/_doc/2 <br>
     {
         "title": "My Second Post3",
         "content": "Hello, world!3"
@@ -87,7 +87,7 @@ PUT http://localhost:9200/posts/_doc/2
         }
 
 Deleting a post by ID. <br>
-DELETE http://localhost:9200/posts/_doc/3
+DELETE http://localhost:9200/posts/_doc/3 <br>
     {
         "_index": "posts",
         "_type": "_doc",
@@ -103,30 +103,30 @@ DELETE http://localhost:9200/posts/_doc/3
         "_primary_term": 36
     }
 
-<p>Elasticsearch is pinged to check availability before launching the application.
+<p>Elasticsearch is pinged to check availability before launching the application. <br>
 All interactions with Elasticsearch are performed using its Python client.</p>
 
 
-<p>.flake8:
-The configuration file for the flake8 tool, which checks the code for compliance with PEP8 standards (Python code style).
+<p>.flake8: <br>
+The configuration file for the flake8 tool, which checks the code for compliance with PEP8 standards (Python code style). <br>
 Contains rules and exceptions for code validation.</p>
 
 
-<p>.gitignore:
-A list of files and directories that should not be monitored by the Git version control system.
+<p>.gitignore: <br>
+A list of files and directories that should not be monitored by the Git version control system. <br>
 For example, temporary files, generated files, Python environments, etc.</p>
 
 
-<p>.pylintrc:
-The configuration file for the pylint tool, which performs static code analysis.
-It contains settings for checking the style, code quality, and various warnings.</p>
+<p>.pylintrc: <br>
+The configuration file for the pylint tool, which performs static code analysis. <br>
+It contains settings for checking the style, code quality, and various warnings.</p> <br>
 
 
-<p>docker-compose.yml:
-A file for Docker Compose that describes how to run multiple containers at the same time.
-Two containers are launched in this project:
-    flask_app: A container for a web application on Flask.
-    elasticsearch: A container with Elasticsearch for storing and searching data.
+<p>docker-compose.yml: <br>
+A file for Docker Compose that describes how to run multiple containers at the same time. <br>
+Two containers are launched in this project: <br>
+    flask_app: A container for a web application on Flask. <br>
+    elasticsearch: A container with Elasticsearch for storing and searching data. <br>
 Automatically binds containers so that the Flask application can interact with Elasticsearch.</p>
 
 
@@ -144,22 +144,22 @@ Example of sections: <br>
     CMD ["python", "app.py "]: Launching the application. <br></p>
 
 
-<p>mypy.ini:
-The configuration file for the mypy tool that checks type annotations in Python.
-Helps with static type checking, which improves code quality and helps prevent errors.</p>
+<p>mypy.ini: <br>
+The configuration file for the mypy tool that checks type annotations in Python. <br>
+Helps with static type checking, which improves code quality and helps prevent errors.</p> <br>
 
 
-<p>pre-commit.sh:
-A script for automatically checking the code before committing to Git.
-It usually contains commands to run linters, tests, or other code checks before committing changes.
+<p>pre-commit.sh: <br>
+A script for automatically checking the code before committing to Git. <br>
+It usually contains commands to run linters, tests, or other code checks before committing changes. <br>
 Example: running flake8, pylint, or tests with pytest to make sure that the code meets the standards before making changes to the repository.</p>
 
 
-<p>Code description:
-Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function.
-Routing and API:
-    The code implements basic CRUD operations for posts:
-        Receiving, creating, updating, deleting posts.
-        Search for posts using full-text search in the title and content fields.
-    Elasticsearch is used as a data warehouse.
-Exception handling: If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.</p>
+<p>Code description: <br>
+Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function. <br>
+Routing and API: <br>
+    The code implements basic CRUD operations for posts: <br>
+        Receiving, creating, updating, deleting posts. <br>
+        Search for posts using full-text search in the title and content fields. <br>
+    Elasticsearch is used as a data warehouse. <br>
+Exception handling: If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.</p> <br>
