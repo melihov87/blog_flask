@@ -133,8 +133,8 @@ Automatically binds containers so that the Flask application can interact with E
 Dockerfile:
 A script that describes the steps to create a Docker image of a Flask application.
 Basic steps:
-    Uses a basic Python image.
-    Sets the necessary dependencies from requirements.txt .
+    >Uses a basic Python image.
+    <p>Sets the necessary dependencies from requirements.txt .
     Copies the source code of the application to the container.
     Launches the Flask application.
 Example of sections:
