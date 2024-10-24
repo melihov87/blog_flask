@@ -13,15 +13,15 @@ Main functions:
 Getting posts. <br>
 GET http://localhost:9200/posts/_search
 
-Search for posts by title and content with pagination support.
-# GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
+Search for posts by title and content with pagination support. <br>
+GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
 
-Getting a post by ID.
-# GET <http://localhost:9200/posts/_search>
+Getting a post by ID. <br>
+GET <http://localhost:9200/posts/_search>
 
-# GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
+GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
 
-# GET http://localhost:9200/posts/_doc/11
+GET http://localhost:9200/posts/_doc/11
     {
         "title": "My eleventh Post",
         "content": "Hello, world!"
@@ -42,8 +42,8 @@ Getting a post by ID.
             "_primary_term": 36
         }
 
-Creating a new post.
-# POST http://localhost:9200/posts/_doc/3
+Creating a new post. <br>
+POST http://localhost:9200/posts/_doc/3
     {
         "title": "My third Post",
         "content": "Hello, world!"
@@ -64,8 +64,8 @@ Creating a new post.
         "_primary_term": 36
     }
 
-Updating an existing post by ID.
-# PUT http://localhost:9200/posts/_doc/2
+Updating an existing post by ID. <br>
+PUT http://localhost:9200/posts/_doc/2
     {
         "title": "My Second Post3",
         "content": "Hello, world!3"
@@ -86,8 +86,8 @@ Updating an existing post by ID.
             "_primary_term": 36
         }
 
-Deleting a post by ID.
-# DELETE http://localhost:9200/posts/_doc/3
+Deleting a post by ID. <br>
+DELETE http://localhost:9200/posts/_doc/3
     {
         "_index": "posts",
         "_type": "_doc",
