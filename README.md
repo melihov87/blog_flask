@@ -11,17 +11,17 @@ The main goal is to provide an API for managing posts using Elasticsearch.
 Main functions: 
 
 Getting posts.
-GET http://localhost:9200/posts/_search
+# GET http://localhost:9200/posts/_search
 
 Search for posts by title and content with pagination support.
-GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
+# GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
 
 Getting a post by ID.
-GET <http://localhost:9200/posts/_search>
+# GET <http://localhost:9200/posts/_search>
 
-GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
+# GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
 
-GET http://localhost:9200/posts/_doc/11
+# GET http://localhost:9200/posts/_doc/11
     {
         "title": "My eleventh Post",
         "content": "Hello, world!"
@@ -43,7 +43,7 @@ GET http://localhost:9200/posts/_doc/11
         }
 
 Creating a new post.
-POST http://localhost:9200/posts/_doc/3
+# POST http://localhost:9200/posts/_doc/3
     {
         "title": "My third Post",
         "content": "Hello, world!"
@@ -65,7 +65,7 @@ POST http://localhost:9200/posts/_doc/3
     }
 
 Updating an existing post by ID.
-PUT http://localhost:9200/posts/_doc/2
+# PUT http://localhost:9200/posts/_doc/2
     {
         "title": "My Second Post3",
         "content": "Hello, world!3"
@@ -87,7 +87,7 @@ PUT http://localhost:9200/posts/_doc/2
         }
 
 Deleting a post by ID.
-DELETE http://localhost:9200/posts/_doc/3
+# DELETE http://localhost:9200/posts/_doc/3
     {
         "_index": "posts",
         "_type": "_doc",
