@@ -10,13 +10,13 @@ The main goal is to provide an API for managing posts using Elasticsearch. <br><
 <br>
 
 <p><h3>Main functions:</h3> <br>
-Getting posts. <br>
+<strong>Getting posts.</strong> <br>
 GET http://localhost:9200/posts/_search</p>
 
-<p>Search for posts by title and content with pagination support. <br>
+<p><strong>Search for posts by title and content with pagination support.</strong> <br>
 GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
 
-<p>Getting a post by ID. <br>
+<p><strong>Getting a post by ID.</strong> <br>
 GET <http://localhost:9200/posts/_search></p>
 
 <p>GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
@@ -42,7 +42,7 @@ GET <http://localhost:9200/posts/_search></p>
             "_primary_term": 36
         }
 </p>
-<p></p>Creating a new post. <br>
+<p><strong>Creating a new post.</strong> <br>
 POST http://localhost:9200/posts/_doc/3 <br>
     {
         "title": "My third Post",
@@ -64,7 +64,7 @@ POST http://localhost:9200/posts/_doc/3 <br>
         "_primary_term": 36
     }
 </p>
-<p></p>Updating an existing post by ID. <br>
+<p><strong>Updating an existing post by ID.</strong> <br>
 PUT http://localhost:9200/posts/_doc/2 <br>
     {
         "title": "My Second Post3",
@@ -86,7 +86,7 @@ PUT http://localhost:9200/posts/_doc/2 <br>
             "_primary_term": 36
         }
 </p>
-<p>Deleting a post by ID. <br>
+<p><strong>Deleting a post by ID.</strong> <br>
 DELETE http://localhost:9200/posts/_doc/3 <br>
     {
         "_index": "posts",
