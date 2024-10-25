@@ -11,7 +11,7 @@ The main goal is to provide an API for managing posts using Elasticsearch. <br><
 
 <p><h3>Main functions:</h3> <br>
 <strong>Getting posts.</strong> <br>
-GET http://localhost:9200/posts/_search</p>
+GET <http://localhost:9200/posts/_search></p>
 
 <p><strong>Search for posts by title and content with pagination support.</strong> <br>
 GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
