@@ -1,3 +1,4 @@
 .idea/
 posts.json
 blog_flask-app.tar
+__pycache__/
