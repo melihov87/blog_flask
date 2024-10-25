@@ -17,7 +17,7 @@ GET http://localhost:9200/posts/_search</p>
 GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
 
 <p><strong>Getting a post by ID.</strong> <br>
-GET <http://localhost:9200/posts/_search></p>
+GET http://localhost:9200/posts/_search</p>
 
 <p>GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
 
