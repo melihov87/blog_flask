@@ -22,10 +22,10 @@ GET http://localhost:9200/posts/_search</p>
 <p>GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
 
 </p>GET http://localhost:9200/posts/_doc/11 <br>
-        <code>{
+<code>{
         "title": "My eleventh Post",
         "content": "Hello, world!"
-    }</code>
+}</code>
 
         {
             "_index": "posts",
@@ -44,10 +44,10 @@ GET http://localhost:9200/posts/_search</p>
 </p>
 <p><strong>Creating a new post.</strong> <br>
 POST http://localhost:9200/posts/_doc/3 <br>
-        <code>{
+<code>{
         "title": "My third Post",
         "content": "Hello, world!"
-    }</code>
+}</code>
 
         {
         "_index": "posts",
@@ -66,10 +66,10 @@ POST http://localhost:9200/posts/_doc/3 <br>
 </p>
 <p><strong>Updating an existing post by ID.</strong> <br>
 PUT http://localhost:9200/posts/_doc/2 <br>
-        <code>{
+<code>{
         "title": "My Second Post3",
         "content": "Hello, world!3"
-    }</code>
+}</code>
 
         {
             "_index": "posts",
