@@ -172,7 +172,8 @@ Application initialization: A Flask application is created, a connection to Elas
         <li>Elasticsearch is used as a data warehouse.</li>
     </li>
 </p>
-            
+
+<br>
 Exception handling:<br>
 If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.
 
