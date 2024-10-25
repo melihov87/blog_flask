@@ -175,3 +175,8 @@ Application initialization: A Flask application is created, a connection to Elas
 
 Exception handling:<br>
 If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.
+
+
+<strong>The command to create a container for running tests:</strong><br>
+docker-compose run app pytest -v test_blog.py
+
