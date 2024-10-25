@@ -1,4 +1,4 @@
-<p><h3>Description of the project.</h3><br>
+<p><h2>Description of the project.</h2><br>
 This project is a simple web application on Flask that interacts with Elasticsearch to create, read, update, delete, and search for posts.<br>
 The project uses containerization with Docker, which makes it easy to deploy an application with the necessary dependencies.</p>
 
@@ -6,10 +6,10 @@ The project uses containerization with Docker, which makes it easy to deploy an 
 app.py:</p>
 
 <p>The main application file on Flask. <br>
-The main goal is to provide an API for managing posts using Elasticsearch. <br>
-Main functions: <br></p>
+The main goal is to provide an API for managing posts using Elasticsearch. <br></p>
 
-<p>Getting posts. <br>
+<p><h3>Main functions:</h3> <br>
+Getting posts. <br>
 GET http://localhost:9200/posts/_search</p>
 
 <p>Search for posts by title and content with pagination support. <br>
