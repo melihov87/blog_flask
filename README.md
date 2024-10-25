@@ -22,10 +22,10 @@ GET http://localhost:9200/posts/_search</p>
 <p>GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
 
 </p>GET http://localhost:9200/posts/_doc/11 <br>
-    {
-        "title": "My eleventh Post", <br>
+<code>{
+        "title": "My eleventh Post",
         "content": "Hello, world!"
-    }
+    }</code>
 
         {
             "_index": "posts",
