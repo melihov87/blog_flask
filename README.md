@@ -44,10 +44,10 @@ GET http://localhost:9200/posts/_search</p>
 </p>
 <p><strong>Creating a new post.</strong> <br>
 POST http://localhost:9200/posts/_doc/3 <br>
-    {
+<code>{
         "title": "My third Post",
         "content": "Hello, world!"
-    }
+    }</code>
 
         {
         "_index": "posts",
@@ -66,10 +66,10 @@ POST http://localhost:9200/posts/_doc/3 <br>
 </p>
 <p><strong>Updating an existing post by ID.</strong> <br>
 PUT http://localhost:9200/posts/_doc/2 <br>
-    {
+<code>{
         "title": "My Second Post3",
         "content": "Hello, world!3"
-    }
+    }</code>
 
         {
             "_index": "posts",
