@@ -7,6 +7,7 @@ app.py:</p>
 
 <p>The main application file on Flask. <br>
 The main goal is to provide an API for managing posts using Elasticsearch. <br></p>
+<br>
 
 <p><h3>Main functions:</h3> <br>
 Getting posts. <br>
