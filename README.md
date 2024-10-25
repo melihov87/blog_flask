@@ -107,22 +107,22 @@ DELETE http://localhost:9200/posts/_doc/3 <br>
 All interactions with Elasticsearch are performed using its Python client.</p>
 
 
-<p>.flake8: <br>
+<p><strong>.flake8: </strong><br>
 The configuration file for the flake8 tool, which checks the code for compliance with PEP8 standards (Python code style). <br>
 Contains rules and exceptions for code validation.</p>
 
 
-<p>.gitignore: <br>
+<p><strong>.gitignore: </strong><br>
 A list of files and directories that should not be monitored by the Git version control system. <br>
 For example, temporary files, generated files, Python environments, etc.</p>
 
 
-<p>.pylintrc: <br>
+<p><strong>.pylintrc: </strong><br>
 The configuration file for the pylint tool, which performs static code analysis. <br>
 It contains settings for checking the style, code quality, and various warnings.</p> <br>
 
 
-<p>docker-compose.yml: <br>
+<p><strong>docker-compose.yml: </strong><br>
 A file for Docker Compose that describes how to run multiple containers at the same time. <br>
 Two containers are launched in this project: <br>
     flask_app: A container for a web application on Flask. <br>
@@ -130,7 +130,7 @@ Two containers are launched in this project: <br>
 Automatically binds containers so that the Flask application can interact with Elasticsearch.</p>
 
 
-<p>Dockerfile: <br>
+<p><strong>Dockerfile: </strong><br>
 A script that describes the steps to create a Docker image of a Flask application. <br>
 <p></p>Basic steps: <br>
     <ul>
@@ -149,18 +149,18 @@ Example of sections: <br>
 </p>
 
 
-<p>mypy.ini: <br>
+<p><strong>mypy.ini: </strong><br>
 The configuration file for the mypy tool that checks type annotations in Python. <br>
 Helps with static type checking, which improves code quality and helps prevent errors.</p> <br>
 
 
-<p>pre-commit.sh: <br>
+<p><strong>pre-commit.sh: </strong><br>
 A script for automatically checking the code before committing to Git. <br>
 It usually contains commands to run linters, tests, or other code checks before committing changes. <br>
 Example: running flake8, pylint, or tests with pytest to make sure that the code meets the standards before making changes to the repository.</p>
 
 
-<p>Code description: <br>
+<p><strong>Code description: </strong><br>
 Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function. <br>
 <p></p>Routing and API: <br>
     <ul>
