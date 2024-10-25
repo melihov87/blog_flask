@@ -174,7 +174,7 @@ Application initialization: A Flask application is created, a connection to Elas
 </p>
 
 <br>
-<p><strong>Exception handling:</strong>strong><br>
+<p><strong>Exception handling:</strong><br>
 If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.</p>
 
 
