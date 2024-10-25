@@ -179,5 +179,5 @@ If the document is not found or another error has occurred, an error with the 40
 
 
 <p><strong>The command to create a container for running tests:</strong><br>
-docker-compose run app pytest -v test_blog.py</p>
+<code>docker-compose run app pytest -v test_blog.py</code></p>
 
