@@ -1,27 +1,26 @@
-Description of the project.
-This project is a simple web application on Flask that interacts with Elasticsearch to create,
-read, update, delete, and search for posts.
-The project uses containerization with Docker, which makes it easy to deploy an application with the necessary dependencies.
+<p>Description of the project.<br>
+This project is a simple web application on Flask that interacts with Elasticsearch to create, read, update, delete, and search for posts.<br>
+The project uses containerization with Docker, which makes it easy to deploy an application with the necessary dependencies.</p>
 
-The main project files are:
-app.py:
+<p>The main project files are:<br>
+app.py:</p>
 
-The main application file on Flask. 
-The main goal is to provide an API for managing posts using Elasticsearch. 
-Main functions: 
+<p>The main application file on Flask. <br>
+The main goal is to provide an API for managing posts using Elasticsearch. <br>
+Main functions: <br></p>
 
-Getting posts. <br>
-GET http://localhost:9200/posts/_search
+<p>Getting posts. <br>
+GET http://localhost:9200/posts/_search</p>
 
-Search for posts by title and content with pagination support. <br>
-GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
+<p>Search for posts by title and content with pagination support. <br>
+GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
 
-Getting a post by ID. <br>
-GET <http://localhost:9200/posts/_search>
+<p>Getting a post by ID. <br>
+GET <http://localhost:9200/posts/_search></p>
 
-GET http://localhost:5001/posts/search?q=world&page=1&per_page=10
+<p>GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
 
-GET http://localhost:9200/posts/_doc/11 <br>
+</p>GET http://localhost:9200/posts/_doc/11 <br>
     {
         "title": "My eleventh Post",
         "content": "Hello, world!"
@@ -41,8 +40,8 @@ GET http://localhost:9200/posts/_doc/11 <br>
             "_seq_no": 111,
             "_primary_term": 36
         }
-
-Creating a new post. <br>
+</p>
+<p></p>Creating a new post. <br>
 POST http://localhost:9200/posts/_doc/3 <br>
     {
         "title": "My third Post",
@@ -63,8 +62,8 @@ POST http://localhost:9200/posts/_doc/3 <br>
         "_seq_no": 116,
         "_primary_term": 36
     }
-
-Updating an existing post by ID. <br>
+</p>
+<p></p>Updating an existing post by ID. <br>
 PUT http://localhost:9200/posts/_doc/2 <br>
     {
         "title": "My Second Post3",
@@ -85,8 +84,8 @@ PUT http://localhost:9200/posts/_doc/2 <br>
             "_seq_no": 112,
             "_primary_term": 36
         }
-
-Deleting a post by ID. <br>
+</p>
+<p>Deleting a post by ID. <br>
 DELETE http://localhost:9200/posts/_doc/3 <br>
     {
         "_index": "posts",
@@ -102,7 +101,7 @@ DELETE http://localhost:9200/posts/_doc/3 <br>
         "_seq_no": 113,
         "_primary_term": 36
     }
-
+</p>
 <p>Elasticsearch is pinged to check availability before launching the application. <br>
 All interactions with Elasticsearch are performed using its Python client.</p>
 
