@@ -161,8 +161,8 @@ Example: running flake8, pylint, or tests with pytest to make sure that the code
 
 
 <p><strong>Code description: </strong><br>
-Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function. <br>
-<p></p><strong>Routing and API: </strong><br>
+Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function.</p> <br>
+<p><strong>Routing and API: </strong><br>
     <ul>
         <li>The code implements basic CRUD operations for posts: <br></li>
             <ul>
@@ -177,6 +177,6 @@ Exception handling:<br>
 If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.
 
 
-<strong>The command to create a container for running tests:</strong><br>
-docker-compose run app pytest -v test_blog.py
+<p><strong>The command to create a container for running tests:</strong><br>
+docker-compose run app pytest -v test_blog.py</p>
 
