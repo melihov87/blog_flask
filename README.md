@@ -162,7 +162,7 @@ Example: running flake8, pylint, or tests with pytest to make sure that the code
 
 <p><strong>Code description: </strong><br>
 Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function. <br>
-<p></p>Routing and API: <br>
+<p></p><strong>Routing and API: </strong><br>
     <ul>
         <li>The code implements basic CRUD operations for posts: <br></li>
             <ul>
