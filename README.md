@@ -170,7 +170,7 @@ Application initialization: A Flask application is created, a connection to Elas
                 <li>Search for posts using full-text search in the title and content fields. <br></li>
             </ul>
         <li>Elasticsearch is used as a data warehouse.</li>
-    </li>
+    </ul>
 </p>
 
 <br>
