@@ -23,7 +23,7 @@ GET http://localhost:9200/posts/_search</p>
 
 </p>GET http://localhost:9200/posts/_doc/11 <br>
     {
-        "title": "My eleventh Post",
+        "title": "My eleventh Post", <br>
         "content": "Hello, world!"
     }
 
