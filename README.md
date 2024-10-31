@@ -1,17 +1,17 @@
-<p><h2>Description of the project.</h2><br>
-This project is a simple web application on Flask that interacts with Elasticsearch to create, read, update, delete, and search for posts.<br>
-The project uses containerization with Docker, which makes it easy to deploy an application with the necessary dependencies.</p>
+# Flask REST API to Elasticsearch
 
-<p>The main project files are:<br>
-app.py:</p>
+This project is a simple web application on Flask that interacts with Elasticsearch to create, read, update, delete, and search for posts.
+The project uses containerization with Docker, which makes it easy to deploy an application with the necessary dependencies.
 
-<p>The main application file on Flask. <br>
-The main goal is to provide an API for managing posts using Elasticsearch. <br></p>
-<br>
 
-<p><h3>Main functions:</h3> <br>
-<strong>Getting posts.</strong> <br>
-GET http://localhost:9200/posts/_search</p>
+## API
+
+The main application file on Flask. <br>
+The main goal is to provide an API for managing posts using Elasticsearch:
+
+* Getting posts.
+
+```GET http://localhost:9200/posts/_search```
 
 <p><strong>Search for posts by title and content with pagination support.</strong> <br>
 GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
@@ -22,10 +22,13 @@ GET http://localhost:9200/posts/_search</p>
 <p>GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
 
 </p>GET http://localhost:9200/posts/_doc/11 <br>
-<code>{
+
+```json
+{
         "title": "My eleventh Post",
         "content": "Hello, world!"
-}</code>
+}
+```
 
         {
             "_index": "posts",
