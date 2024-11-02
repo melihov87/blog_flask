@@ -120,25 +120,25 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 ```
 
 Elasticsearch is pinged to check availability before launching the application. <br>
-All interactions with Elasticsearch are performed using its Python client.
-
+All interactions with Elasticsearch are performed using its Python client. <br>
+ <br>
 
 >.flake8:<br>
 
 The configuration file for the flake8 tool, which checks the code for compliance with PEP8 standards (Python code style). <br>
-Contains rules and exceptions for code validation.</p>
+Contains rules and exceptions for code validation.</p> <br>
 
 
 >.gitignore:<br>
 
 A list of files and directories that should not be monitored by the Git version control system. <br>
-For example, temporary files, generated files, Python environments, etc.</p>
+For example, temporary files, generated files, Python environments, etc.</p> <br>
 
 
 >.pylintrc:<br>
 
 The configuration file for the pylint tool, which performs static code analysis. <br>
-It contains settings for checking the style, code quality, and various warnings.</p>
+It contains settings for checking the style, code quality, and various warnings.</p> <br>
 
 
 >docker-compose.yml:<br>
@@ -147,7 +147,7 @@ A file for Docker Compose that describes how to run multiple containers at the s
 Two containers are launched in this project: <br>
     flask_app: A container for a web application on Flask. <br>
     elasticsearch: A container with Elasticsearch for storing and searching data. <br>
-Automatically binds containers so that the Flask application can interact with Elasticsearch.</p>
+Automatically binds containers so that the Flask application can interact with Elasticsearch.</p> <br>
 
 
 >Dockerfile:<br>
@@ -167,38 +167,34 @@ Example of sections: <br>
         <li>RUN pip install -r requirements.txt : Installing dependencies. <br></li>
         <li>CMD ["python", "app.py "]: Launching the application. <br></p></li>
     </ul>
-</p>
+</p> <br>
 
 
-<p><strong>mypy.ini: </strong><br>
+>mypy.ini:<br>
+
 The configuration file for the mypy tool that checks type annotations in Python. <br>
 Helps with static type checking, which improves code quality and helps prevent errors.</p> <br>
 
 
-<p><strong>pre-commit.sh: </strong><br>
+>pre-commit.sh:<br>
+
 A script for automatically checking the code before committing to Git. <br>
 It usually contains commands to run linters, tests, or other code checks before committing changes. <br>
-Example: running flake8, pylint, or tests with pytest to make sure that the code meets the standards before making changes to the repository.</p>
+Example: running flake8, pylint, or tests with pytest to make sure that the code meets the standards before making changes to the repository.</p> <br>
 
 
-<p><strong>Code description: </strong><br>
+### Code description:<br>
+
 Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function.</p> <br>
-<p><strong>Routing and API: </strong><br>
-    <ul>
-        <li>The code implements basic CRUD operations for posts: <br></li>
-            <ul>
-                <li>Receiving, creating, updating, deleting posts. <br></li>
-                <li>Search for posts using full-text search in the title and content fields. <br></li>
-            </ul>
-        <li>Elasticsearch is used as a data warehouse.</li>
-    </ul>
-</p>
 
+### Routing and API:<br>
+The code implements basic CRUD operations for posts: <br>
+        Receiving, creating, updating, deleting posts. <br>
+        Search for posts using full-text search in the title and content fields. <br>
+Elasticsearch is used as a data warehouse.
 <br>
-<p><strong>Exception handling:</strong><br>
-If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.</p>
 
 
-<p><strong>The command to create a container for running tests:</strong><br>
-<code>docker-compose run app pytest -v test_blog.py</code></p>
+### Exception handling:<br>
 
+If the document is not found or another error has occurred, an error with the 404 code and description is returned to the client.
