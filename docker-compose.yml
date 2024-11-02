@@ -5,7 +5,7 @@ services:
     build: .
     container_name: flask_app
     ports:
-      - "5001:5001"  # Убедитесь, что порты соответствуют
+      - "5001:5001"
     volumes:
       - .:/app
     depends_on:
