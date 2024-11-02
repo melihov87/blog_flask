@@ -8,16 +8,19 @@ The project uses containerization with Docker, which makes it easy to deploy an 
 
 The main application file on Flask. <br>
 The main goal is to provide an API for managing posts using Elasticsearch:
-
-* Getting posts. <br>
+<br>
+<br>
+* ### _Getting posts._ <br>
 
 ```GET http://localhost:5001/posts/full```
-
-* Search for posts by title and content with pagination support. <br>
+<br>
+<br>
+* ### _Search for posts by title and content with pagination support._ <br>
 
 ```GET http://localhost:5001/posts/search?q=Hello&page=1&per_page=100```
-
-* Getting a post by ID. <br>
+<br>
+<br>
+* ### _Getting a post by ID._ <br>
 
 ```GET http://localhost:5001/posts/11```
 
@@ -43,8 +46,9 @@ The main goal is to provide an API for managing posts using Elasticsearch:
                 "_primary_term": 36
         }
 ```
+<br>
 
-* Creating a new post.
+* ### _Creating a new post._ <br>
 
 ```POST http://localhost:5001/posts```
 
@@ -71,8 +75,9 @@ The main goal is to provide an API for managing posts using Elasticsearch:
                 "_primary_term": 36
         }
 ```
+<br>
 
-* Updating an existing post by ID. <br>
+* ### _Updating an existing post by ID._ <br>
 
 ```PUT http://localhost:5001/posts/2``` <br>
 
@@ -98,8 +103,9 @@ The main goal is to provide an API for managing posts using Elasticsearch:
                 "_primary_term": 36
         }
 ```
+<br>
 
-* Deleting a post by ID. <br>
+* ### _Deleting a post by ID._ <br>
 
 ```DELETE http://localhost:5001/posts/3``` <br>
 ```
@@ -121,7 +127,7 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 
 Elasticsearch is pinged to check availability before launching the application. <br>
 All interactions with Elasticsearch are performed using its Python client. <br>
- <br>
+<br>
 
 >.flake8:<br>
 
