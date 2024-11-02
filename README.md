@@ -27,7 +27,7 @@ The main goal is to provide an API for managing posts using Elasticsearch:
         "content": "Hello, world!"
 }
 ```
-
+```
         {
             "_index": "posts",
             "_type": "_doc",
@@ -42,39 +42,46 @@ The main goal is to provide an API for managing posts using Elasticsearch:
             "_seq_no": 111,
             "_primary_term": 36
         }
-
+```
 * Creating a new post.
 
-```POST http://localhost:9200/posts/_doc/3```
+```POST http://localhost:5001/posts```
 
-```{
-"title": "My third Post",
-"content": "Hello, world!"
-}```
+```
+{
+        "title": "My third Post",
+        "content": "Hello, world!"
+}
+```
 
-        ```{
+```
+{
         "_index": "posts",
         "_type": "_doc",
         "_id": "3",
         "_version": 2,
         "result": "updated",
         "_shards": {
-            "total": 2,
-            "successful": 1,
-            "failed": 0
-        },
+                "total": 2,
+                "successful": 1,
+                "failed": 0
+                },
         "_seq_no": 116,
         "_primary_term": 36
-    }```
+}
+```
 
 * Updating an existing post by ID. <br>
 
-```PUT http://localhost:9200/posts/_doc/2``` <br>
-```{
+```PUT http://localhost:5001/posts/2``` <br>
+
+```
+{
         "title": "My Second Post3",
         "content": "Hello, world!3"
-}```
-
+}
+```
+```
         {
             "_index": "posts",
             "_type": "_doc",
@@ -89,9 +96,10 @@ The main goal is to provide an API for managing posts using Elasticsearch:
             "_seq_no": 112,
             "_primary_term": 36
         }
-</p>
-<p><strong>Deleting a post by ID.</strong> <br>
-DELETE http://localhost:9200/posts/_doc/3 <br>
+```
+* Deleting a post by ID. <br>
+```DELETE http://localhost:5001/posts/3``` <br>
+```
     {
         "_index": "posts",
         "_type": "_doc",
@@ -106,6 +114,7 @@ DELETE http://localhost:9200/posts/_doc/3 <br>
         "_seq_no": 113,
         "_primary_term": 36
     }
+```
 </p>
 <p>Elasticsearch is pinged to check availability before launching the application. <br>
 All interactions with Elasticsearch are performed using its Python client.</p>
