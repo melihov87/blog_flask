@@ -177,19 +177,19 @@ Helps with static type checking, which improves code quality and helps prevent e
 A script for automatically checking the code before committing to Git. <br>
 It usually contains commands to run linters, tests, or other code checks before committing changes. <br>
 Example: running flake8, pylint, or tests with pytest to make sure that the code meets the standards before making changes to the repository.<br>
-
+<br>
 
 ### Code description:<br>
 
 Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function.<br>
+<br>
 
 ### Routing and API:<br>
 - The code implements basic CRUD operations for posts: <br>
         - Receiving, creating, updating, deleting posts. <br>
         - Search for posts using full-text search in the title and content fields. <br>
-- Elasticsearch is used as a data warehouse.
+- Elasticsearch is used as a data warehouse.<br>
 <br>
-
 
 ### Exception handling:<br>
 
