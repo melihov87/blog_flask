@@ -13,15 +13,15 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 
 ```GET http://localhost:9200/posts/_search```
 
-<p><strong>Search for posts by title and content with pagination support.</strong> <br>
-GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
+* Search for posts by title and content with pagination support.
+```GET http://localhost:5001/posts/search?q=world&page=1&per_page=10```
 
-<p><strong>Getting a post by ID.</strong> <br>
-GET http://localhost:9200/posts/_search</p>
+* Getting a post by ID.
+```GET http://localhost:9200/posts/_search```
 
-<p>GET http://localhost:5001/posts/search?q=world&page=1&per_page=10</p>
+```GET http://localhost:5001/posts/search?q=world&page=1&per_page=10```
 
-</p>GET http://localhost:9200/posts/_doc/11 <br>
+```GET http://localhost:9200/posts/_doc/11```
 
 ```json
 {
