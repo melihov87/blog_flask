@@ -29,20 +29,21 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 ```
 ```
         {
-            "_index": "posts",
-            "_type": "_doc",
-            "_id": "11",
-            "_version": 2,
-            "result": "updated",
-            "_shards": {
-                "total": 2,
-                "successful": 1,
-                "failed": 0
-            },
-            "_seq_no": 111,
-            "_primary_term": 36
+                "_index": "posts",
+                "_type": "_doc",
+                "_id": "11",
+                "_version": 2,
+                "result": "updated",
+                "_shards": {
+                        "total": 2,
+                        "successful": 1,
+                        "failed": 0
+                        },
+                "_seq_no": 111,
+                "_primary_term": 36
         }
 ```
+
 * Creating a new post.
 
 ```POST http://localhost:5001/posts```
@@ -55,20 +56,20 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 ```
 
 ```
-{
-        "_index": "posts",
-        "_type": "_doc",
-        "_id": "3",
-        "_version": 2,
-        "result": "updated",
-        "_shards": {
-                "total": 2,
-                "successful": 1,
-                "failed": 0
-                },
-        "_seq_no": 116,
-        "_primary_term": 36
-}
+        {
+                "_index": "posts",
+                "_type": "_doc",
+                "_id": "3",
+                "_version": 2,
+                "result": "updated",
+                "_shards": {
+                        "total": 2,
+                        "successful": 1,
+                        "failed": 0
+                        },
+                "_seq_no": 116,
+                "_primary_term": 36
+        }
 ```
 
 * Updating an existing post by ID. <br>
@@ -83,41 +84,42 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 ```
 ```
         {
-            "_index": "posts",
-            "_type": "_doc",
-            "_id": "2",
-            "_version": 2,
-            "result": "updated",
-            "_shards": {
-                "total": 2,
-                "successful": 1,
-                "failed": 0
-            },
-            "_seq_no": 112,
-            "_primary_term": 36
+                "_index": "posts",
+                "_type": "_doc",
+                "_id": "2",
+                "_version": 2,
+                "result": "updated",
+                "_shards": {
+                        "total": 2,
+                        "successful": 1,
+                        "failed": 0
+                        },
+                "_seq_no": 112,
+                "_primary_term": 36
         }
 ```
+
 * Deleting a post by ID. <br>
 ```DELETE http://localhost:5001/posts/3``` <br>
 ```
-    {
-        "_index": "posts",
-        "_type": "_doc",
-        "_id": "3",
-        "_version": 2,
-        "result": "deleted",
-        "_shards": {
-            "total": 2,
-            "successful": 1,
-            "failed": 0
-        },
-        "_seq_no": 113,
-        "_primary_term": 36
-    }
+        {
+                "_index": "posts",
+                "_type": "_doc",
+                "_id": "3",
+                "_version": 2,
+                "result": "deleted",
+                "_shards": {
+                        "total": 2,
+                        "successful": 1,
+                        "failed": 0
+                        },
+                "_seq_no": 113,
+                "_primary_term": 36
+        }
 ```
-</p>
-<p>Elasticsearch is pinged to check availability before launching the application. <br>
-All interactions with Elasticsearch are performed using its Python client.</p>
+
+Elasticsearch is pinged to check availability before launching the application. <br>
+All interactions with Elasticsearch are performed using its Python client.
 
 
 <p><strong>.flake8: </strong><br>
