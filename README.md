@@ -12,17 +12,21 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 <br>
 * ### _Getting posts._ <br>
 
-```GET http://localhost:5001/posts/full```
-<br>
-<br>
+```json
+GET http://localhost:5001/posts/full
+```
+
 * ### _Search for posts by title and content with pagination support._ <br>
 
-```GET http://localhost:5001/posts/search?q=Hello&page=1&per_page=100```
-<br>
-<br>
+```json
+GET http://localhost:5001/posts/search?q=Hello&page=1&per_page=100
+```
+
 * ### _Getting a post by ID._ <br>
 
-```GET http://localhost:5001/posts/11```
+```json
+GET http://localhost:5001/posts/11
+```
 
 ```json
 {
@@ -46,11 +50,12 @@ The main goal is to provide an API for managing posts using Elasticsearch:
                 "_primary_term": 36
         }
 ```
-<br>
 
-* ### _Creating a new post._ <br>
+* ### _Creating a new post._
 
-```POST http://localhost:5001/posts```
+```json
+POST http://localhost:5001/posts
+```
 
 ```json
 {
@@ -75,11 +80,12 @@ The main goal is to provide an API for managing posts using Elasticsearch:
                 "_primary_term": 36
         }
 ```
-<br>
 
-* ### _Updating an existing post by ID._ <br>
+* ### _Updating an existing post by ID._
 
-```PUT http://localhost:5001/posts/2``` <br>
+```json
+PUT http://localhost:5001/posts/2 <br>
+```
 
 ```json
 {
@@ -103,11 +109,13 @@ The main goal is to provide an API for managing posts using Elasticsearch:
                 "_primary_term": 36
         }
 ```
-<br>
 
-* ### _Deleting a post by ID._ <br>
+* ### _Deleting a post by ID._
 
-```DELETE http://localhost:5001/posts/3``` <br>
+```json
+DELETE http://localhost:5001/posts/3 <br>
+```
+
 ```json
         {
                 "_index": "posts",
