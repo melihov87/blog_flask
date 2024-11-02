@@ -123,22 +123,26 @@ Elasticsearch is pinged to check availability before launching the application. 
 All interactions with Elasticsearch are performed using its Python client.
 
 
-<p><strong>.flake8: </strong><br>
+>.flake8:<br>
+
 The configuration file for the flake8 tool, which checks the code for compliance with PEP8 standards (Python code style). <br>
 Contains rules and exceptions for code validation.</p>
 
 
-<p><strong>.gitignore: </strong><br>
+>.gitignore:<br>
+
 A list of files and directories that should not be monitored by the Git version control system. <br>
 For example, temporary files, generated files, Python environments, etc.</p>
 
 
-<p><strong>.pylintrc: </strong><br>
+>.pylintrc:<br>
+
 The configuration file for the pylint tool, which performs static code analysis. <br>
-It contains settings for checking the style, code quality, and various warnings.</p> <br>
+It contains settings for checking the style, code quality, and various warnings.</p>
 
 
-<p><strong>docker-compose.yml: </strong><br>
+>docker-compose.yml:<br>
+
 A file for Docker Compose that describes how to run multiple containers at the same time. <br>
 Two containers are launched in this project: <br>
     flask_app: A container for a web application on Flask. <br>
@@ -146,7 +150,8 @@ Two containers are launched in this project: <br>
 Automatically binds containers so that the Flask application can interact with Elasticsearch.</p>
 
 
-<p><strong>Dockerfile: </strong><br>
+>Dockerfile:<br>
+
 A script that describes the steps to create a Docker image of a Flask application. <br>
 <p></p>Basic steps: <br>
     <ul>
