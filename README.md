@@ -30,7 +30,7 @@ The main goal is to provide an API for managing posts using Elasticsearch:
         "content": "Hello, world!"
 }
 ```
-```
+```json
         {
                 "_index": "posts",
                 "_type": "_doc",
@@ -52,14 +52,14 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 
 ```POST http://localhost:5001/posts```
 
-```
+```json
 {
         "title": "My third Post",
         "content": "Hello, world!"
 }
 ```
 
-```
+```json
         {
                 "_index": "posts",
                 "_type": "_doc",
@@ -81,13 +81,13 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 
 ```PUT http://localhost:5001/posts/2``` <br>
 
-```
+```json
 {
         "title": "My Second Post3",
         "content": "Hello, world!3"
 }
 ```
-```
+```json
         {
                 "_index": "posts",
                 "_type": "_doc",
@@ -108,7 +108,7 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 * ### _Deleting a post by ID._ <br>
 
 ```DELETE http://localhost:5001/posts/3``` <br>
-```
+```json
         {
                 "_index": "posts",
                 "_type": "_doc",
