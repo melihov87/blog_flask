@@ -11,15 +11,15 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 
 * Getting posts. <br>
 
-```GET http://localhost:9200/posts/_search```
+```GET http://localhost:5001/posts/full```
 
 * Search for posts by title and content with pagination support. <br>
 
-```GET http://localhost:5001/posts/search?q=world&page=1&per_page=10```
+```GET http://localhost:5001/posts/search?q=Hello&page=1&per_page=100```
 
 * Getting a post by ID. <br>
 
-```http://localhost:5001/posts/15```
+```GET http://localhost:5001/posts/11```
 
 ```json
 {
@@ -42,15 +42,17 @@ The main goal is to provide an API for managing posts using Elasticsearch:
             "_seq_no": 111,
             "_primary_term": 36
         }
-</p>
-<p><strong>Creating a new post.</strong> <br>
-POST http://localhost:9200/posts/_doc/3 <br>
-<code>{
-        "title": "My third Post",
-        "content": "Hello, world!"
-}</code>
 
-        {
+* Creating a new post.
+
+```POST http://localhost:9200/posts/_doc/3```
+
+```{
+"title": "My third Post",
+"content": "Hello, world!"
+}```
+
+        ```{
         "_index": "posts",
         "_type": "_doc",
         "_id": "3",
@@ -63,14 +65,15 @@ POST http://localhost:9200/posts/_doc/3 <br>
         },
         "_seq_no": 116,
         "_primary_term": 36
-    }
-</p>
-<p><strong>Updating an existing post by ID.</strong> <br>
-PUT http://localhost:9200/posts/_doc/2 <br>
-<code>{
+    }```
+
+* Updating an existing post by ID. <br>
+
+```PUT http://localhost:9200/posts/_doc/2``` <br>
+```{
         "title": "My Second Post3",
         "content": "Hello, world!3"
-}</code>
+}```
 
         {
             "_index": "posts",
