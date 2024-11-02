@@ -153,39 +153,35 @@ Automatically binds containers so that the Flask application can interact with E
 >Dockerfile:<br>
 
 A script that describes the steps to create a Docker image of a Flask application. <br>
-<p></p>Basic steps: <br>
-    <ul>
-        <li>Uses a basic Python image. <br></li>
-        <li>Sets the necessary dependencies from requirements.txt . <br></li>
-        <li>Copies the source code of the application to the container. <br></li>
-        <li>Launches the Flask application. <br></li>
-    </ul>
-Example of sections: <br>
-    <ul>
-        <li>FROM python:3.9: Basic image. <br></li>
-        <li>COPY . /app: Copy project files. <br></li>
-        <li>RUN pip install -r requirements.txt : Installing dependencies. <br></li>
-        <li>CMD ["python", "app.py "]: Launching the application. <br></p></li>
-    </ul>
-</p> <br>
+### Basic steps:
+- Uses a basic Python image. <br>
+- Sets the necessary dependencies from requirements.txt . <br>
+- Copies the source code of the application to the container. <br>
+- Launches the Flask application. <br>
+### Example of sections: <br>
+- FROM python:3.9: Basic image. <br>
+- COPY . /app: Copy project files. <br>
+- RUN pip install -r requirements.txt : Installing dependencies. <br>
+- CMD ["python", "app.py "]: Launching the application. <br>
+<br>
 
 
 >mypy.ini:<br>
 
 The configuration file for the mypy tool that checks type annotations in Python. <br>
-Helps with static type checking, which improves code quality and helps prevent errors.</p> <br>
+Helps with static type checking, which improves code quality and helps prevent errors.<br>
 
 
 >pre-commit.sh:<br>
 
 A script for automatically checking the code before committing to Git. <br>
 It usually contains commands to run linters, tests, or other code checks before committing changes. <br>
-Example: running flake8, pylint, or tests with pytest to make sure that the code meets the standards before making changes to the repository.</p> <br>
+Example: running flake8, pylint, or tests with pytest to make sure that the code meets the standards before making changes to the repository.<br>
 
 
 ### Code description:<br>
 
-Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function.</p> <br>
+Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function.<br>
 
 ### Routing and API:<br>
 - The code implements basic CRUD operations for posts: <br>
