@@ -188,10 +188,10 @@ Example: running flake8, pylint, or tests with pytest to make sure that the code
 Application initialization: A Flask application is created, a connection to Elasticsearch is established, and its readiness is checked through the wait_for_elasticsearch function.</p> <br>
 
 ### Routing and API:<br>
-The code implements basic CRUD operations for posts: <br>
-        Receiving, creating, updating, deleting posts. <br>
-        Search for posts using full-text search in the title and content fields. <br>
-Elasticsearch is used as a data warehouse.
+- The code implements basic CRUD operations for posts: <br>
+        - Receiving, creating, updating, deleting posts. <br>
+        - Search for posts using full-text search in the title and content fields. <br>
+- Elasticsearch is used as a data warehouse.
 <br>
 
 
