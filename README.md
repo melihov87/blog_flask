@@ -84,7 +84,7 @@ POST http://localhost:5001/posts
 * ### _Updating an existing post by ID._
 
 ```json
-PUT http://localhost:5001/posts/2 <br>
+PUT http://localhost:5001/posts/2
 ```
 
 ```json
@@ -109,11 +109,9 @@ PUT http://localhost:5001/posts/2 <br>
                 "_primary_term": 36
         }
 ```
-
 * ### _Deleting a post by ID._
-
 ```json
-DELETE http://localhost:5001/posts/3 <br>
+DELETE http://localhost:5001/posts/3
 ```
 
 ```json
