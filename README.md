@@ -100,6 +100,7 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 ```
 
 * Deleting a post by ID. <br>
+
 ```DELETE http://localhost:5001/posts/3``` <br>
 ```
         {
