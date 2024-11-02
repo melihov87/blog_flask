@@ -19,11 +19,7 @@ The main goal is to provide an API for managing posts using Elasticsearch:
 
 * Getting a post by ID. <br>
 
-```GET http://localhost:9200/posts/_search```
-
-```GET http://localhost:5001/posts/search?q=world&page=1&per_page=10```
-
-```GET http://localhost:9200/posts/_doc/11```
+```http://localhost:5001/posts/15```
 
 ```json
 {
